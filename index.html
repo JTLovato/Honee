@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Honee</title>
+  </head>
+  <body>
+      
+    <!--    Hidden Settings Modal    -->
+
+                      <div class="modal fade" id="settingsModal1" tabindex="-1" role="dialog" aria-labelledby="settingModal2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sound</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="soundHold" id="sound">
+                                        <div class="iconBG" id="iconBG">
+                                            <img src="img/icons/sound.png" alt="Music Icon">
+                                        </div>
+                                       <div class="soundBtnHold">
+                                           <button type="button" id="soundOn" class="btn btn-on">On</button>
+                                           <button type="button" id="soundOff" class="btn btn-off">Off</button>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn settingModalBtn" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="settingsModal2" tabindex="-1" role="dialog" aria-labelledby="settingModal2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bocked Users</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="blockedUsers">
+                                        <h3>You Currently Have No Blocked Users</h3>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn settingModalBtn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="settingsModal3" tabindex="-1" role="dialog" aria-labelledby="settingModal3" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Faved Users</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="favedUsers">
+                                        <h3>You Currently Have No Favorite Users</h3>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn settingModalBtn" data-dismiss="modal">Close
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    <!--            Hidden Modals From Blog/News/Social Settings     -->
+
+
+    <div class="modal fade" id="blogModal1" tabindex="-1" role="dialog" aria-labelledby="blogModal1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Top 10 Ways To Stay Social During A Pandemic</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <h4>By <br>Janette <br>Redburn</h4>
+                        <img src="img/profile6.png" alt="Profile Photo">
+                    </div>
+                    <p>
+                        It's been over six months since the Coronavirus has pretty much stopped life in it's tracks, and it's almost impossible, and very irresponsible, to go out and have fun at your favorite restaurant, club, etc. But here are ten ways we here at Honee have thought up to make sure you don't lose touch with the ones you like to have fun with:
+                    </p>
+                    <ol>
+                        <li>Go For A Socially Distant Walk With Friends</li>
+                        <li>Zoom Call People You Havent Seen In A While</li>
+                        <li>Stand Outside At 8PM And Howl With Everyone</li>
+                        <li>Have A Movie Night Online With Friends</li>
+                        <li>Challenges On TikTok And Other Social Medias</li>
+                        <li>Online Board Games</li>
+                        <li>Group Your Friends In Madden/Rocket League/NBA2k</li>
+                        <li>Snail Mail Offers A Deeper Meaning Than Texting</li>
+                        <li>Go For A Drive In Movie</li>
+                        <li>Of Course, Sharing Memes Over Group Chat</li>
+                        </ol>   
+                    <p>It's an incomplete list, but hopefully this will help keep you conected while we're all staying home.</p>             
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="blogModal2" tabindex="-1" role="dialog" aria-labelledby="blogModal2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How Your Mental Health Leads To Better Physical Health</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <h4>By <br>Devonte <br>Samson</h4>
+                        <img src="img/profile7.png" alt="Profile Photo">
+                    </div>
+                    <p>The difference between physical and mental health is not as pronounced as you might think. For years, researchers have been asking a complex question — how do mental and physical health interact? The answer is predictably complicated, but we do know that mental illness impacts physical health directly and indirectly. Depression, the most common mental disorder in the United States, doesn’t just impact mood and motivation. It can directly affect the immune system by suppressing T cell responses to viruses and bacteria, making  it easier to get sick and stay sick for longer. A weakened immune system can also lead to a jump in the severity of allergies or asthma. You can find out more <a href="https://hside.org/link-between-physical-and-mental-health/">Here.</a> Remember to take care of yourselves.</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="blogModal3" tabindex="-1" role="dialog" aria-labelledby="blogModal3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">My Daily Cleanse Routine</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <h4>By <br>Janette <br>Redburn</h4>
+                        <img src="img/profile6.png" alt="Profile Photo">
+                    </div>
+                   <p>For the majority of my life, I’ve had clear skin, but after puberty, I felt the need to develop a skin-care regimen to combat dryness. After trying tons of products from Aveeno and St. Ives to Ambi (I had the worst reaction to their products), I stumbled upon Trader Joe’s skin-care section! Now, my daily regimen is very simple, starting with Trader Joe’s Nourish All-in-One Facial Cleanser, followed by a few spritzes of Trader Joe’s Rose Water Facial Toner, and sealing it in with a little bit of Trader Joe’s Vitamin E Oil. I never would have guessed in a million years that their products would do the trick, but I love that my face is not too dry or not too oily as a result of them. Side note: Their Refresh Citrus Body Wash with vitamin C and Coconut Body Butter are bomb.com! My skin is so soft all over and feels so good daily! So Keep up the great work everyone!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="blogModal4" tabindex="-1" role="dialog" aria-labelledby="blogModal4" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Why Black Self Care Means Black Self Love</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>By <br>Devonte <br>Samson</h4>
+                            <img src="img/profile7.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                   <p>By nature, Black people are beautiful and resilient. Thus, it is necessary that Black people treat themselves accordingly. Most Black people grow up learning to cope rather than acquiring the tools to heal and take care of themselves. Learning to cope too often means learning survival mechanisms which breed dysfunctional codependency on external sources. Truth is, all the care that Black people need lies within. Healing and self-care are all about achieving inner peace in a chaotic world. Self-care can never just be a one-time thing. The key to self-care is discipline and consistency. You have to get to a place where you love yourself so much that you decide that you are your first priority every single day; you have to allow this to become natural. When you practice self-care you are able to achieve more clarity, find a stronger sense of purpose, and you are able to show up healthier in your personal relationships. Racism isn’t going to end tomorrow, but this doesn’t mean that Black people should live in pain. Black people must actively seek ways to bring more self-love and peace to themselves, to the entire Black community. Black people should not perceive themselves as forever submerged in white supremacy. To believe that you have no control over your life is to possess an inferiority complex. Black people must realize that self-love and liberation comes from within, and at any moment you can choose to say yes to taking care of yourself. Wellness allows you to heal through holistic practices. Holistic practices present an opportunity to trust yourself, and for the environment to pour back into the human body and psyche. Believe it or not, self-care is not consumerism, self-care is not materialism, Self-care does not have a look, self-care is not classicist, self-care does not have a body type. Self-care does not have a gender. Self-care does not have an age. Self-Care is not exclusive. Self-Care is for every human being on this planet. Black people are a brilliant people who must begin to take care of themselves not just on the outside but also within. Take care of yourself, and life will be fantastically much better. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--       News Carousel Modals      -->
+
+    <div class="modal fade" id="newsModal1" tabindex="-1" role="dialog" aria-labelledby="newsModal1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Updates Coming <br>To Honee</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>By <br>Honee <br>Admin</h4>
+                            <img src="img/profile2.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                    <p>Hey y'all! Your lovely Honee Admin here, creating a thread to let you know what will be happeneing in the next
+                        few weeks when we upgrade Honee!
+                    </p>
+                    <ul>
+                        <li>Adding More Community Days</li>
+                        <li>Allow Anonymous Names</li>
+                        <li>Customizable Colors And Themes</li>
+                        <li>Misc. Bug Fixes</li>
+                    </ul>
+                    <p>Make sure you go to your play store and update when it is time. If you run into any bugs please DM me or another admin!</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newsModal2" tabindex="-1" role="dialog" aria-labelledby="newsModal2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cambridge Analytica Leak Shows<br> Black Voters Targeted</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>By <br>Devonte <br>Samson</h4>
+                            <img src="img/profile7.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                   <p>President Donald Trump’s 2016 campaign worked with Cambridge Analytica to target millions of Black Americans in a massive voter-suppression effort, according to data leaked from the campaign.Trump’s 2016 campaign used a “vast cache of data” on almost 200 million American voters, with 3.5 million Black Americans categorized as “deterrence,” or voters that they didn’t want to cast ballots, according to an exclusive Channel 4 News report. Black Americans were disproportionately marked as “deterrence” by Trump’s 2016 campaign, and were targeted with tailored ads on Facebook and other channels, Channel 4 News reported. Brad Parscale, the 2016 campaign’s digital director and former 2020 campaign manager, said in a 2018 interview with PBS Frontline that Trump’s successful presidential run didn’t target Black Americans. “I would say I’m nearly 100 percent sure we did not run any campaigns that targeted even African-Americans,” he said. However, the purported data leak casts doubt on those claims. The 2016 campaign used negative ads targeting Black Americans to reduce the turnout of Hillary Clinton’s supporters, including videos where she referred to Black youths as “super predators,” according to Channel 4 News. Facebook, which began implementing measures to prevent election interference and voter misinformation for the upcoming 2020 election, has no public record of the ads, as many of them disappeared from the platform after Trump’s campaign stopped paying for them.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newsModal3" tabindex="-1" role="dialog" aria-labelledby="newsModal3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> What The Quarentine Will<br> Mean For The Kids</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>By <br>Devonte <br>Samson</h4>
+                            <img src="img/profile7.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                   <p>It’s hard to say where the research on this would be but I had a sobering thought yesterday: what kind of love and care are our children getting at home through schooling from their parents that they’ve rarely seen in schools? What are Black children experiencing right now? And how could we capture that and share it with school systems? A friend is homeschooling her children and NOT using the curriculum sent home. Why? Because she wants her children to see themselves in their work. In studies. In history. In literature. The patience she has with them as she delivers lessons with love & care have the power to turn kids around. The ones who hate school, who have been told on repeat that they aren’t wanted, necessary or represented. School systems do that to children all the time. We have that data But what if children are receiving lessons and liking them much better because their parents, the ones who love them, are offering it up differently? Parents that are more patient with their own child than the teacher ever has been? What if we did some ethnographic research? What if those families were researched to find out what was working and how the change occurred? I have no doubt that some kids are learning TONS more right now and not because of what the schools are sending home but because adults are doing it with real kindness. There are lots of jokes flying around about how tired parents are already, how teachers are salty because they do this daily with 30+ kids, how prayer and swatting have returned. But there are kids who are LOVING this experience. Children who aren’t just Black. Children from Asian households who are really grateful not to be bullied in school systems right now because 45 can’t shut his mouth long enough not to joke or dismiss real panic and concern because he has to rile up his base to ensure people have an Other to blame. Children with Arab parents who have seen on repeat how they’re dismissed & ignored or even made fun of because, if they’re also Muslim, they’ve asked for a prayer room during the day to fulfill their prayers. Jewish children. Latinx children. Indigenous children. All kinds of families. DIVERSE ones. Who, right now, are offering their children lessons laden with care and love. They’re guiding their children through learning that centers *them* in the narrative, makes them the heroes/heroines, and teaches them *their* history and not just the old white, Eurocentric one. That’s the research & data I want. The people who are grateful for this time with their kids to show them another way & not the status quo way that American schools struggle to change. This isn’t out of left field. I’m hearing from them. What will we do with the findings? </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newsModal4" tabindex="-1" role="dialog" aria-labelledby="newsModal4" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Correcting The Course<br> Of Racist Data</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>By <br>Ayodele <br>Odubela</h4>
+                            <img src="img/profile8.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                   <p> One of the issues often debated in AI as it regards to ethics is who is responsible for the social and financial implications of machine learning decisions. I’ve observed a vast gap between how regulated industries and industries without regulations develop machine learning models. Credit card companies, risk monitoring, and other consumer reporting agencies care highly about creating models they can stand behind and legally defend, whereas many consumer products don’t disclose the nature of their social media research or models. The same way the insurance and automotive industries consider accidents in a matter of who is at fault, who can we hold responsible when an algorithm predicts poorly? Some suggest individual engineers should be responsible for the impact their models have on others’ lives. If this were the case we would see a larger emphasis on ethics and data privacy being taught in computer science and data science programs. Are they at fault because it’s ultimately their responsibility to choose representative training data and use real data to monitor performance? Data Scientists also can consult with outside companies to audit their data and models. There are also proponents of policies that would mandate companies that create algorithms that have a drastic impact on human life (in many industries like healthcare and self-driving vehicles it can mean life or death) make their models and training data open to the public. One of the major reasons this is a hard issue to solve is that companies see the algorithms as their “secret sauce”. This business approach has created a high demand and regard for data professionals, however, this comes at the detriment of model transparency. Many have heard of the Facebook Research project that manipulated users’ timelines to measure positive or negative effects. In academic research, there are criteria that proper research must meet to be ethical, especially when the subjects err human. The most egregious offense is the violation of user consent. While buried in the Facebook Terms of Service, few users knew Facebook was using them as emotional test subjects. Internet companies are rarely subject to the stringent criteria of academic research or the explainability of consumer reporting agencies due to few policies that preside over their models. hand playing facebook’s human icons as marionettes Many have heard of the Facebook Research project that manipulated users’ timelines to measure positive or negative effects. In academic research, there are criteria that proper research must meet to be ethical, especially when the subjects err human. The most egregious offense is the violation of user consent. While buried in the Facebook Terms of Service, few users knew Facebook was using them as emotional test subjects. Internet companies are rarely subject to the stringent criteria of academic research or the explainability of consumer reporting agencies due to few policies that preside over their models. This brings us back to who is at fault. If an algorithm incorrectly predicts a convicted person will reoffend and in the actual case they didn’t reoffend, who owes the convicted person an explanation? Is it the company for having the most resources to rectify the false positive? Do we blame the engineer for not building a more strict model or for including proxies for race and gender? Do we blame the end-user like a county judge for using a tool like COMPASS to predict recidivism without feedback on how well the model works? We are even having conversations about holding the AI themselves accountable, but that’s an intensive task that involves deciding what kinds of consequences or penalties an AI would face after making an incorrect prediction. One solution to simplify the AI responsibility quandary is human in the loop systems. In these scenarios we see AI making recommendations to the human interacting with it. For a remote medical visit, a doctor can receive an image of a growth and have a computer vision program attempt to identify it. The computer can output its Ultimately, it’s up to practitioners, including Data Scientists and Machine Learning Engineers, to follow best practices and mitigate how bias can impact their AI models. To have public access to data models created and used by large firms, we need to enact policies that would incentivize open data. We desperately need a push towards learning AI Ethics in all levels of tech instruction including academia, online MooCs, and bootcamps.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--     Meet & Greet Carousel Modals    -->
+
+    <div class="modal fade" id="meetModal1" tabindex="-1" role="dialog" aria-labelledby="meetModal1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Zoom With Us As We Watch The Broncos Vs 49ers!</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>Started By <br>Malcolm<br>Kadri</h4>
+                            <img src="img/profile5.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                   <p>This sunday at 11am mountain time,  it's the San Fransisco 49ers vs the Denver Broncos! Join us on our Honee Slack channel as we root on our teams! DM me to get the code and we'll all group chat!
+                   </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="meetModal2" tabindex="-1" role="dialog" aria-labelledby="meetModal2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hey, just signed up, anyone in the 6ix?</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>Started By <br>Michelle <br>Cheersom</h4>
+                            <img src="img/profile3.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                   <p>Hey y'all, I'm Michelle, I'm in Toronto and just signed up! Reach out and say hi if you're in "Downtown Canada" lol. I like Argonauts games, cheer on the Raptors and Leafs and like going to the bar with my girls. If you're down to hang out say hi!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="meetModal3" tabindex="-1" role="dialog" aria-labelledby="meetModal3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">The Honee Community Discussion</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>Started By <br>Honee <br>Admin</h4>
+                            <img src="img/profile2.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                    <p>This spot is saved for those who may have comments or questions the Honee community might have.</p>
+                    <ul>
+                        <li>I think I found a bug, I can't change the outline of my profile pic.
+                            <li>Answered: Yours was set to permanent, try again! -H</li>
+                        </li>
+                        <li>What if we added the option to keep our self help techies instead of getting new ones each time?</li>
+                        <li>Can we get themes?</li>
+                        <li>can someone help me recover my original account?</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="meetModal4" tabindex="-1" role="dialog" aria-labelledby="meetModal4" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Anyone Else See <br>Lovecraft Country? <img src="img/shockEmoji.png" /></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="authorHold">
+                        <div class="authorHold">
+                            <h4>Started By <br>Darius <br>Commodore</h4>
+                            <img src="img/profile4.png" alt="Profile Photo">
+                        </div>
+                    </div>
+                    <p>All I can say is wow! Week in and week out this show is too good!</p>
+                    <p><b>Joshue Replied: </b>It blows my mind every time! like what1?!?</p>
+                    <p><b>Debbie Replied: </b>I can't believe he died! I was so sad!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--       Splash Page Opening         -->
+
+
+    <div class="splash" id="splash">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.34 796.98"><defs><style>.colors-1{fill:#fefefe;}.colors-2{fill:#e39a00;}.colors-3{fill:#eac117;}.colors-4{fill:#fb7c6e;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+            <path class="colors-1" d="M449.81,797q-95.26,0-190.54,0c-26,0-46-11.4-59.07-33.68-33.94-58.09-67.39-116.46-101-174.72C69.78,537.61,40.52,486.63,11,435.82c-14.34-24.66-14.76-49-.44-73.79Q105,198.5,199.43,34.9C212.56,12.2,232.6.12,258.93.09q190.32-.24,380.64,0c27,0,47.19,12.19,60.63,35.44q94.26,163,188.42,326.15c14.17,24.51,14.37,48.86.19,73.4q-94.48,163.55-189,327.08c-13.22,22.83-33.31,34.76-60,34.79q-95,.07-190.08,0Z"/>
+            <path class="colors-2" d="M305.23,518c2.59-.57,3.87-.35,3.44,3.1-7.73,61.92-15.56,123.83-23.84,185.68-2.23,16.63-4.33,33.39-.48,50.12,1.15,5,2.33,10,6.31,14.49C269.43,772.69,249,773,231.3,759.45c-2.9-2.2-4.53-5.29-6.27-8.29q-74.53-129-149-258.08c-13.4-23.2-26.25-46.74-40.39-69.48-10.7-17.18-10.31-32.56-.09-50.1q94.95-163,188.71-326.59c8-13.84,21.2-17.76,35.12-20.94a47,47,0,0,1,10.42-.77q152.94-.06,305.86,0c1.75,0,3.59-.48,5.71.72-10.84,6.93-18.89,16.15-26.1,26.34-9.31,13.15-15.91,27.68-22,42.41-11,26.62-19.33,54.14-26.35,82.05-7.84,31.17-13.76,62.72-18.94,94.42-5.63,34.51-9.71,69.21-13.11,104-.3,3.1-1.12,5.15-4.53,6.72a237,237,0,0,1-38,13.24c-9,2.4-17.76,5.66-27,7.05-2.93,1.35-6.27,1.39-9.17,2.86-3.83,1-7.71,1.92-11.48,3.16-3.35,1.11-4.08,0-3.75-3.22,1.37-13.7,2.67-27.41,3.79-41.14,1.34-16.38,2.46-32.78,3.67-49.16,1.14-7,1.68-14,2.37-21.06a58.86,58.86,0,0,0-.36-14.29c.38-16.14,1-32.29,1.1-48.43.14-32.68-.72-65.31-10.29-96.93-4-13.13-9.68-25.49-20.55-34.57C349.26,89.9,336.27,89.68,323,93.9c-18.91,6-33.41,18.32-46.35,33a286.22,286.22,0,0,0-45.12,69.49C221,219.21,211.7,242.59,209.44,268a92.26,92.26,0,0,0,.55,23.41,36.9,36.9,0,0,0,5.65,14.78c4,5.94,8.81,6.38,13.78,1.05,4.07-4.36,6.37-9.8,8.48-15.18,7.48-19.06,15.49-37.87,25.33-55.84,7.1-13,15.06-25.38,25.49-36a48.73,48.73,0,0,1,10.21-7.92c12.1-7.06,22-3.42,27,9.68,4.29,11.26,4.64,23.11,5,34.88,1.16,37.83-1.59,75.53-4.62,113.2-1.91,23.72-4.24,47.4-6.29,71.1-.2,2.29-.82,3.64-3.24,4.21-6.63,1.58-13.24,3.24-19.78,5.1-11.72,3.32-22.38,8.36-29.33,19.06-4.76,7.32-6.3,15.7-7.61,24.07-1.79,11.43-1.86,22.9,1,34.21,3.71,14.5,13.39,17.63,28.16,14.3C294.42,520.22,299.86,519.25,305.23,518Z"/>
+            <path class="colors-3" d="M387,492.78c15.63-5.38,31.53-9.95,46.94-16,1.31-.78,2.84-1,4.17-1.74,8.79-3.89,17.65-7.59,26.31-11.75,4-1.91,4.75-1.09,4.52,3.05-1.46,25.94-1.88,51.91-.92,77.86,1.46,39.64,4.61,79.12,17.15,117.13,7,21.11,16,41.32,33,56.48a50.69,50.69,0,0,0,35.42,13.36c19.59-.23,34.49-10,47.58-22.87,22-21.68,36.34-48.41,49-76.2,5.53-12.12,11.45-24.08,13.32-37.43,1.2-8.55,1.75-17.2,2.59-25.8a4.14,4.14,0,0,0,0-5c-.91-6.57-.51-13.33-2.76-19.72a29.61,29.61,0,0,0-1.89-4.58c-4.25-7.76-10.69-7.86-15.33.09a199.81,199.81,0,0,0-9.7,19.15c-8,17.94-16.62,35.56-28.27,51.49-8.54,11.68-18.88,21-33.54,24.22-10.29,2.26-18.49-1.26-24.68-9.79-10.65-14.67-14.34-31.72-16.68-49.1-5.78-43-5.66-86.33-4.3-129.64.21-6.66.34-13.33.3-20a10.47,10.47,0,0,1,3.82-8.68,297.38,297.38,0,0,0,28.29-28.62c11.67-13.24,21.45-27.82,30.55-42.91,18.4-30.52,30.17-63.63,38.34-98.1A467.82,467.82,0,0,0,642,166.25c1.63-28.61,2.86-57.22-1.92-85.68C637,62,632,44.2,619.83,29.22c-.65-1.5-3.6-1.46-2.67-4,13.71-.47,27.26-.15,40,6,7.54,3.61,13.58,8.32,17.92,15.85q94.5,164.19,189.53,328.09c9.63,16.56,9.16,31.15-.37,47.53Q779,569.24,694.5,716.32c-6.08,10.52-12.67,20.79-18.08,31.65-5.62,11.27-15.11,16.87-26.21,20.67a60.23,60.23,0,0,1-19.58,3.23q-151.65-.09-303.31-.06h-4.53c2.8-4.32,5.68-8.08,7.82-12.21,8.95-17.25,12.46-36,15.11-55,8.92-64.12,16.54-128.41,24-192.71.12-1,.33-2,.5-2.95.48-9.59,6.27-14,15.08-15.47C385.94,493.33,386.61,493.4,387,492.78Z"/>
+            <path class="colors-4" d="M535.11,340.13c1.07-11,2-22.07,3.21-33.09,4-38.41,9.52-76.62,16.93-114.53,5.33-27.27,11.46-54.38,21.24-80.48,2.55-6.81,5.56-13.54,10.87-18.89s9.85-5,13.46,1.61c3.9,7.07,4.76,15,4.91,22.73.93,46.8-2.44,93.13-16.7,138.12-10.08,31.81-26.74,59.57-50.71,82.87C537.49,339.28,536.88,340.3,535.11,340.13Z"/></g></g>
+        </svg>
+        <div class="splashHold">
+            <h2>Honee</h2>
+            <p>A Site Where BIPOC<br> Can Find Community</p>
+            <button class="helpYourself" id="splashBtn">help yourself  :)</button>
+        </div>
+    </div>
+
+
+
+<!--                  Navigation             -->
+
+
+    <nav class="mainNav" id="mainNav">
+        <div class="leftNav" id="leftNav">
+            <p id="leftNavP">Resources</p>
+        </div>
+        <div class="leftNavCard" id="leftNavCard">
+            <button type="button" class="close" id="closeResourcesCard" aria-label="Close">
+                <span class="btnClose">X</span>
+            </button>
+            <div class="resources">
+                <div class="inHold">    
+                    <h1 class="inHeader">Learn More</h1>
+                    <p>Links And Resources</p>
+                </div>
+                <div class="linksGroup">
+                    <h3>Links To Learn</h3>
+                    <div class="list-group">
+                        <a target="_blank" href="https://www.smithsonianmag.com/history/158-resources-understanding-systemic-racism-america-180975029/" class="list-group-item list-group-item-action">History Of Racism</a>
+                        <a target="_blank" href="https://www.adolescenthealth.org/Resources/Anti-Racism-Toolkit.aspx" class="list-group-item list-group-item-action">Adolescent Anti-Racism Health Kit</a>
+                        <a target="_blank" href="https://www.brookings.edu/blog/brown-center-chalkboard/2020/06/04/the-banality-of-racism-in-education/" class="list-group-item list-group-item-action">Racism In US Education</a>
+                        <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0001879104000430" class="list-group-item list-group-item-action">Racism In The Workplace</a>
+                    </div>
+                </div>
+                <div class='listGroup'>
+                    <h3>Outside Help</h3>
+                    <div class="list-group">
+                        <a target="_blank" href="https://suicidepreventionlifeline.org/" class="list-group-item list-group-item-action">Suicide Hotline</a>
+                        <a target="_blank" href="https://www.psychologytoday.com/us/therapists" class="list-group-item list-group-item-action">Find A Therpist</a>
+                        <a target="_blank" href="https://www.healthcare.gov/" class="list-group-item list-group-item-action">Get Healthcare</a>
+                        <a target="_blank" href="https://www.crisistextline.org/become-a-volunteer/" class="list-group-item list-group-item-action">Volunteer To Counsel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="centerNav" id="centerNav">
+            <p id="centerNavP">Get Help</p>
+        </div>
+        <div class="centerNavCard" id="centerNavCard">
+            <button type="button" class="close" id="closeHelpCard" aria-label="Close">
+                <span class="btnClose">X</span>
+            </button>
+            <div class="inHold">    
+                <h1 class="inHeader">Who Should We Call?</h1>
+                <p>Select From A Group Of People To Call And Lets Help Together</p>
+            </div>
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Call Our Self Help Technician
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body cardBody1">
+                        <img src="img/selfHelpTechnician.png" alt="Help Technician Photo"/>
+                        <div class="callInfo">
+                            <p>Our 24 hour service offers help for when you're not feeling 100%.</p>
+                            <button type="button" class="btn btn-warning"><a class="callLink" href="tel:5555555555">Call Us</a></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Call Your Preferred Friend
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body cardBody2">
+                        <div class="callInfo">
+                            <p>They Get You More Than You Get Yourself. Give Them A Ring.</p>
+                            <button type="button" class="btn btn-warning"><a class="callLink" href="tel:5555555555">Call Them</a></button>
+                        </div>
+                        <img class="roundPhoto" src="img/friendPhoto.jpg" alt="Friend's Photo"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Call Your Preferred Family Member
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body cardBody3">
+                        <div class="card-body cardBody1">
+                            <img class="roundPhoto" src="img/familyPhoto.jpg" alt="Family's Photo"/>
+                            <div class="callInfo">
+                                <p>No One Has Your Back More, And They'll Always Be There To Offer A Hand.</p>
+                                <button type="button" class="btn btn-warning"><a class="callLink" href="tel:5555555">Call Them</a></button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Call Our On Call Therapist
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body cardBody4">
+                        <div class="callInfo">
+                            <p>When You Need To Talk, Right Now. Get in Touch With A Professional Immediately.</p>
+                            <button type="button" class="btn btn-warning"><a class="callLink" href="tel:5555555555">Call Us</a></button>
+                        </div>
+                        <img src="img/doctor.png" alt="Doctor Photo" />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-danger"><a class="callLink" href="tel:555">Call 911</a></button>
+            </div>
+        </div>
+        <div class="rightNav" id="rightNav">
+            <p id="rightNavP">Contact</p>
+        </div>
+        <div class="rightNavCard" id="rightNavCard">
+            <button type="button" class="close" id="closeContactCard" aria-label="Close">
+                <span class="btnClose">X</span>
+            </button>
+            <div class="contacts">
+                <div class="inHold">    
+                    <h1 class="inHeader">Contact Us</h1>
+                    <p>Reach Out And Say Hi</p>
+                </div>
+                <div class="notifGroup">
+                    <div class="notifications">
+                        <h3>Get Notified</h3>
+                        <form class="contactForm">
+                            <div class="form-group row">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="contactBtn btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contactGroup">
+                    <div class="contactMe">
+                        <h3>Reach Our For Employment</h3>
+                        <h6>Creator</h6>
+                        <h4>John Lovato</h4>
+                        <div class="contactLinks">
+                            <a href="mailto:johnsawebdev@gmail.com">Email Me!</a>
+                            <a href="tel:682-283-1972">Call Me!</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://twitter.com/JohnTLovato" target="_blank">
+                                <img src="img/twitter.png" alt="Twitter Icon"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/john-lovato-4295b3199/" target="_blank">
+                                <img src="img/linkedin.png" alt="LinkedIn Icon"/>
+                            </a>
+                            <a href="https://johntlovato.myportfolio.com/" target="_blank">
+                                <img src="img/portfolio.png" alt="Portfolio Icon"/>
+                            </a>
+                        </div>
+                        <h4>Other Works</h4>
+                        <div class="otherLinks">
+                            <a href="#">
+                                <img src="img/svg/svg/mask.svg" alt="Goalie Icon">
+                            </a>
+                            <a href="#">
+                                <img src="img/svg/svg/planet.svg" alt="Planet Icon">
+                            </a>
+                            <a href="#">
+                                <img src="img/svg/svg/cover.svg" alt="Cover Icon">
+                            </a>
+                            <a href="#">
+                                <img src="img/svg/svg/jtl.svg" alt="Home Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<!--         Main hexagon             -->
+
+    <div class="main" id="main">
+        <div class="hexagons"></div>
+            <svg class="hex1 hex" id="health" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-1{fill:#fb4040;}.cls-2{fill:#fda9a9;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1 hexPath1" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-2" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/healthIcon.png" alt="Health Icon" x="12.%" y="10%" height="75%" width="75%"/>
+            </svg>
+            <p class="hexTitle1 title" id="title1">Health</p>
+            
+            <svg class="hex2 hex" id="hygiene" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-3{fill:#fa9709;}.cls-4{fill:#fdd090;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-3 hexPath2" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-4" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/hygieneIcon.png" alt="Hygiene Icon" x="12.%" y="0" height="75%" width="75%"/>
+            </svg>
+            <p class="hexTitle2 title" id="title2">Hygiene</p>
+            
+            <svg class="hex3 hex" id="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-5{fill:#fae609;}.cls-6{fill:#fdf490;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-5 hexPath3" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-6" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/socialIcon.png" alt="Social Icon" x="12.%" y="0" height="75%" width="75%"/>
+            </svg>
+            <p class="hexTitle3 title" id="title3">Social</p>
+        
+            <svg class="hex4 hex" id="enjoy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-7{fill:#a857e0;}.cls-8{fill:#d8b3f1;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-7 hexPath4" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-8" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/enjoyIcon.png" alt="Enjoy Icon" x="12.%" y="0" height="75%" width="75%"/>
+            </svg>
+            <p class="hexTitle4 title" id="title4">Enjoy</p>
+                    
+            <svg class="hex5 hex" id="relax" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-9{fill:#5777e0;}.cls-10{fill:#b3c2f1;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-9 hexPath5" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-10" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/relaxIcon.png" alt="Relax Icon" x="12.%" y="0" height="75%" width="75%"/>
+            </svg>
+            <p class="hexTitle5 title" id="title5">Relax</p>
+                    
+            <svg class="hex6 hex" id="work" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-11{fill:#71e057;}.cls-12{fill:#bff1b3;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-11 hexPath6" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-12" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/workIcon.png" alt="Work Icon" x="12.%" y="0" height="75%" width="75%"/>
+            </svg>
+            <p class="hexTitle6 title" id="title6">Work</p>
+                        
+            <svg class="hex7 hex" id="profile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 613.84"><defs><style>.cls-13{fill:rgb(219, 219, 219);}.cls-14{fill:#fff;}</style></defs>
+                <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-13 hexPath" d="M.07,311.16l-.07-7A61.08,61.08,0,0,1,8.26,278.9Q81,153.13,153.6,27.21c9.22-16,23-24.89,41.36-26.85.76-.09,1.51-.24,2.26-.36,18.1.06,36.2.17,54.3.18q97,0,194,0,25.62,0,51.25-.11c13.44,1.5,25.15,6.57,34.58,16.5,5.46,5.75,8.93,12.79,12.83,19.54q47.13,81.44,94.12,163c15.67,27.16,31.45,54.26,47,81.52,10.08,17.72,9.87,35.66-.27,53.33q-26,45.36-52.28,90.61-46.92,81.28-93.87,162.53c-10.13,17.47-25.56,26.66-45.77,26.69q-147.37.18-294.75-.07c-19.11,0-34.16-8.94-43.8-25.44C128.08,543,102.06,497.49,75.85,452.11Q42.12,393.66,8.28,335.26A62.83,62.83,0,0,1,.07,311.16Z"/><path class="cls-14" d="M346.18,594.37q-69.3,0-138.59,0a51.89,51.89,0,0,1-25.3-6.87,22.42,22.42,0,0,1-8.82-8.8Q119.81,485.52,66,392.41q-19.37-33.54-38.8-67a73.34,73.34,0,0,1-5.57-12.15c-3.06-8.6.67-15.84,4.66-22.79q43.12-75,86.51-149.93c19.75-34.2,39.75-68.26,59.09-102.69,6.48-11.54,16.82-15.33,28.43-17.62,6.83-1.35,13.82-.57,20.73-.57q131.48-.06,262.93-.06a53.17,53.17,0,0,1,24.39,5.84,26,26,0,0,1,11.18,10.65Q557.65,102.32,596,168.42q35.24,61,70.42,122.06A44.23,44.23,0,0,1,672,305.06c.9,5.25-1.24,10.19-3.72,14.61-10.6,18.89-21.44,37.65-32.26,56.41Q577.89,476.85,519.76,577.63c-6.12,10.64-16.29,13.64-27,16.12-3.37.79-6.87.63-10.34.63Q414.32,594.35,346.18,594.37Z"/>
+                </g></g>
+                <image href="img/profile.png" alt="Profile Photo" x="5%" y="5%" height="90%" width="90%"/>
+            </svg>
+        </div>
+
+        <div class='healthCard' id="healthCard">
+            <div class="innerHealth">
+                <button type="button" class="close" id="closeHealthCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="quoteHold">
+                    <p class="quote" id="healthQuote">--</p>
+                    <p class="quoteAuthor" id="healthAuthor">--</p>
+                </div>
+                <img src="img/healthIcon.png" alt="Health Icon" class="cardIcon">
+                <div class="squareHold" id="healthSquareHold">
+                    <p class="cardQuestion">Did You Do At Least Two Of These?</p>
+                    <p class="cardClick">(Click On All Those That Apply)</p>
+                    <div class="healthSquare squares">
+                        <div class="healthSquare1 square" onclick="healthGreen(this)" id="healthSquare1">
+                            <img src="img/icons/calories.png" alt="">
+                            <p class="squareText">Have Between 2k & 2.5k Calories?</p>
+                        </div>
+                        <div class="healthSquare2 square" onclick="healthGreen(this)" id="healthSquare2">
+                            <img src="img/icons/dumbell.png" alt="">
+                            <p class="squareText">Exercise At Least An Hour?</p>
+                        </div>
+                        <div class="healthSquare3 square" onclick="healthGreen(this)" id="healthSquare3">
+                            <img src="img/icons/zs.png" alt="">
+                            <p class="squareText">Sleep At Least 8 hours?</p>
+                        </div>
+                        <div class="healthSquare4 square" onclick="healthGreen(this)" id="healthSquare4">
+                            <img src="img/icons/water.png" alt="">
+                            <p class="squareText">Drink At Least 8 Glasses Of Water?</p>
+                        </div>
+                    </div>
+                    <button class="cardSubmit" id="healthSubmit" onclick="healthSubmit()" >Submit</button>
+                </div>
+                <div class="healthResults results" id="healthResults">
+                    <!-- Results of the healthSquare Are Placed Here     -->
+                </div>
+            </div>
+        </div>
+
+        <div class='hygieneCard' id="hygieneCard">
+            <div class="innerHygiene">
+                <button type="button" class="close" id="closeHygieneCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="quoteHold">
+                    <p class="quote" id="hygieneQuote"></p>
+                    <p class="quoteAuthor" id="hygieneAuthor"></p>
+                </div>
+                <img src="img/hygieneIcon.png" alt="Hygiene Icon" class="cardIcon">
+                <div class="squareHold" id="hygieneSquareHold">
+                    <p class="cardQuestion">Did You Do All Of These?</p>
+                    <p class="cardClick">(Click On All Those That Apply)</p>
+                    <div class="hygieneSquare squares">
+                        <div class="hygieneSquare1 square" onclick="hygieneGreen(this)" id="hygieneSquare1">
+                            <img src="img/icons/shower.png" alt="">
+                            <p class="squareText">Did You Shower?</p>
+                        </div>
+                        <div class="hygieneSquare2 square" onclick="hygieneGreen(this)" id="hygieneSquare2">
+                            <img src="img/icons/toothbrush.png" alt="">
+                            <p class="squareText">Did Your Brush Your Teeth?</p>
+                        </div>
+                        <div class="hygieneSquare3 square" onclick="hygieneGreen(this)" id="hygieneSquare3">
+                            <img src="img/icons/shirt.png" alt="">
+                            <p class="squareText">Wearing Clean Clothes?</p>
+                        </div>
+                        <div class="hygieneSquare4 square" onclick="hygieneGreen(this)" id="hygieneSquare4">
+                            <img src="img/icons/handwash.png" alt="">
+                            <p class="squareText">Are You Washing Your Hands?</p>
+                        </div>
+                    </div>
+                    <button class="cardSubmit" id="hygieneSubmit" onclick="hygieneSubmit()">Submit</button>
+                </div>
+                <div class="hygieneResults results" id="hygieneResults">
+                    <!-- Results of the hygieneSquare Are Placed Here     -->
+                </div>
+            </div>
+        </div>      
+            
+        <div class='socialCard' id="socialCard">
+            <div class="innerSocial">
+                <button type="button" class="close" id="closeSocialCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="quoteHold">
+                    <p class="quote" id="socialQuote"></p>
+                    <p class="quoteAuthor" id="socialAuthor"></p>
+                </div>
+                <img src="img/socialIcon.png" alt="Social Icon" class="cardIcon">
+                <div class="squareHold" id="socialSquareHold">
+                    <p class="cardQuestion">Did You Do At Least Two Of These?</p>
+                    <p class="cardClick">(Click On All Those That Apply)</p>
+                    <div class="socialSquare squares">
+                        <div class="socialSquare1 square" onclick="socialGreen(this)" id="socialSquare1">
+                            <img src="img/icons/talk.png" alt="">
+                            <p class="squareText">Did You Talk To Someone Today?</p>
+                        </div>
+                        <div class="socialSquare2 square" onclick="socialGreen(this)" id="socialSquare2">
+                            <img src="img/icons/texting.png" alt="">
+                            <p class="squareText">Did You Text Two People Today?</p>
+                        </div>
+                        <div class="socialSquare3 square" onclick="socialGreen(this)" id="socialSquare3">
+                            <img src="img/icons/newperson.png" alt="">
+                            <p class="squareText">Did You Meet Anyone New?</p>
+                        </div>
+                        <div class="socialSquare4 square" onclick="socialGreen(this)" id="socialSquare4">
+                            <img src="img/icons/publicspeaking.png" alt="">
+                            <p class="squareText">Did You Talk In Public?</p>
+                        </div>
+                    </div>
+                    <button class="cardSubmit" id="socialSubmit" onclick="socialSubmit()">Submit</button>
+                </div>
+                <div class="socialResults results" id="socialResults">
+                    <!-- Results of the socialSquare Are Placed Here     -->
+                </div>
+            </div>
+        </div>     
+               
+        <div class='enjoyCard' id="enjoyCard">
+            <div class="innerEnjoy">
+                <button type="button" class="close" id="closeEnjoyCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="quoteHold">
+                    <p class="quote" id="enjoyQuote"></p>
+                    <p class="quoteAuthor" id="enjoyAuthor"></p>
+                </div>
+                <img src="img/enjoyIcon.png" alt="Enjoy Icon" class="cardIcon">
+                <div class="squareHold" id="enjoySquareHold">
+                    <p class="cardQuestion">Did You Do At Least One Of These?</p>
+                    <p class="cardClick">(Click On All Those That Apply)</p>
+                    <div class="enjoySquare squares">
+                        <div class="enjoySquare1 square" onclick="enjoyGreen(this)" id="enjoySquare1">
+                            <img src="img/icons/tv.png" alt="">
+                            <p class="squareText">Did You Watch TV Or A Movie?</p>
+                        </div>
+                        <div class="enjoysquare2 square" onclick="enjoyGreen(this)" id="enjoySquare2">
+                            <img src="img/icons/controller.png" alt="">
+                            <p class="squareText">Did You Play VideoGames?</p>
+                        </div>
+                        <div class="enjoySquare3 square" onclick="enjoyGreen(this)" id="enjoySquare3">
+                            <img src="img/icons/club.png" alt="">
+                            <p class="squareText">Did You Go To The Club Or Bar?</p>
+                        </div>
+                        <div class="enjoySquare4 square" onclick="enjoyGreen(this)" id="enjoySquare4">
+                            <img src="img/icons/music.png" alt="">
+                            <p class="squareText">Did You Listen TO Music?</p>
+                        </div>
+                    </div>
+                    <button class="cardSubmit" id="enjoySubmit" onclick="enjoySubmit()">Submit</button>
+                </div>
+                <div class="enjoyResults results" id="enjoyResults">
+                    <!-- Results of the enjoySquare Are Placed Here     -->
+                </div>
+            </div>
+        </div>          
+        
+        <div class='relaxCard' id="relaxCard">
+            <div class="innerRelax">
+                <button type="button" class="close" id="closeRelaxCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="quoteHold">
+                    <p class="quote" id="relaxQuote"></p>
+                    <p class="quoteAuthor" id="relaxAuthor"></p>
+                </div>
+                <img src="img/relaxIcon.png" alt="Relax Icon" class="cardIcon">
+                <div class="squareHold" id="relaxSquareHold">
+                    <p class="cardQuestion">Did You Do At Least Two Of These?</p>
+                    <p class="cardClick">(Click On All Those That Apply)</p>
+                    <div class="relaxSquare squares">
+                        <div class="relaxSquare1 square" onclick="relaxGreen(this)" id="relaxSquare1">
+                            <img src="img/icons/zs.png" alt="">
+                            <p class="squareText">Did You Take A Nap Today?</p>
+                        </div>
+                        <div class="relaxSquare2 square" onclick="relaxGreen(this)" id="relaxSquare2">
+                            <img src="img/icons/meditate.png" alt="">
+                            <p class="squareText">Did You Meditate Today?</p>
+                        </div>
+                        <div class="relaxSquare3 square" onclick="relaxGreen(this)" id="relaxSquare3">
+                            <img src="img/icons/internetdown.png" alt="">
+                            <p class="squareText">Did You Turn The Internet Off?</p>
+                        </div>
+                        <div class="relaxSquare4 square" onclick="relaxGreen(this)" id="relaxSquare4">
+                            <img src="img/icons/books.png" alt="">
+                            <p class="squareText">Did You Read A Book Today?</p>
+                        </div>
+                    </div>
+                    <button class="cardSubmit" id="workSubmit" onclick="relaxSubmit()">Submit</button>
+                </div>
+                <div class="relaxResults results" id="relaxResults">
+                    <!-- Results of the relaxSquare Are Placed Here     -->
+                </div>
+            </div>
+        </div>
+        <div class='workCard' id="workCard">
+            <div class="innerWork">
+                <button type="button" class="close" id="closeWorkCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="quoteHold">
+                    <p class="quote" id="workQuote"></p>
+                    <p class="quoteAuthor" id="workAuthor"></p>
+                </div>
+                <img src="img/workIcon.png" alt="Work Icon" class="cardIcon">
+                <div class="squareHold" id="workSquareHold">
+                    <p class="cardQuestion">Did You Do At Least One Of These?</p>
+                    <p class="cardClick">(Click On All Those That Apply)</p>
+                    <div class="workSquare squares">
+                        <div class="workSquare1 square" onclick="workGreen(this)" id="workSquare1">
+                            <img src="img/icons/language.png" alt="">
+                            <p class="squareText">Did You Study A New Language?</p>
+                        </div>
+                        <div class="worksquare2 square" onclick="workGreen(this)" id="workSquare2">
+                            <img src="img/icons/books.png" alt="">
+                            <p class="squareText">Did You Study Or Do Homework?</p>
+                        </div>
+                        <div class="workSquare3 square" onclick="workGreen(this)" id="workSquare3">
+                            <img src="img/icons/muscle.png" alt="">
+                            <p class="squareText">Did You Exercise At Least An Hour?</p>
+                        </div>
+                        <div class="workSquare4 square" onclick="workGreen(this)" id="workSquare4">
+                            <img src="img/icons/build.png" alt="">
+                            <p class="squareText">Did You Build Anything Today?</p>
+                        </div>
+                    </div>
+                    <button class="cardSubmit" id="workSubmit" onclick="workSubmit()">Submit</button>
+                </div>
+                <div class="workResults results" id="workResults">
+                    <!-- Results of the workSquare Are Placed Here     -->
+                </div>
+            </div>
+        </div>
+        <div class='profileCard' id="profileCard">
+            <div class="innerProfile">
+                <button type="button" class="close" id="closeProfileCard" aria-label="Close">
+                    <span class="btnClose">X</span>
+                </button>
+                <div class="profileHeader">
+                    <h3 class="profileHead">Hello, You.</h3>
+                    <p class="profileGreeting">What Can We Do For You?</p>
+                    <img src="img/profile.png" alt="Profile Photo" class="profilePic">
+                </div>
+                <div class="settings">
+                    <button type="button" class="btn settingsBtn" data-toggle="modal" data-target="#settingsModal1">
+                        <img src="img/icons/sound.png" alt="Sound Icon" class="settingsIcon">
+                        Sound
+                    </button>
+                    <button type="button" class="btn settingsBtn" data-toggle="modal" data-target="#settingsModal2">
+                        <img src="img/icons/blocked.png" alt="Blocked Icon" class="settingsIcon">
+                        Blocked Users
+                    </button>
+                    <button type="button" class="btn settingsBtn" data-toggle="modal" data-target="#settingsModal3">
+                        <img src="img/icons/faved.png" alt="Favorites Icon" class="settingsIcon">
+                        Faved Users
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--           Carousel Section           -->
+
+
+
+    <div class="moreReading" id="moreReading">
+        <div class="carouselSection" id="carouselSection">
+            <div class="blogHolder">
+                <div id="carouselExampleIndicators" class="carousel slide" data-interval="6000" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <h5>Blog</h5>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#blogModal1">
+                                Top 10 Ways To Stay<br> Social During A Pandemic
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#blogModal2">
+                                How Your Mental Health<br>leads To Better Physical Health
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#blogModal3">
+                                My Daily Cleanse Routine
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#blogModal4">
+                                Why Black Self Health Means <br>Black Self Love
+                            </button>
+                        </div>
+                        <div class="carousel-item">
+                            <h5>News</h5>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#newsModal1">
+                                Updates Coming <br>To Honee
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#newsModal2">
+                                Cambridge Analytica Leak Shows<br> Black Voters Targeted
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#newsModal3">
+                                What The Quarentine Will<br> Mean For The Kids
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#newsModal4">
+                                Correcting The Course<br> Of Racist Data
+                            </button>
+                        </div>
+                        <div class="carousel-item">
+                            <h5>Meet & Greets</h5>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#meetModal1">
+                                Zoom With Us As We Watch<br> The Broncos Vs 49ers!
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#meetModal2">
+                                Hey, just signed up,<br>ds anyone in the 6ix?
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#meetModal3">
+                                The Honee Community Discussion
+                            </button>
+                            <button type="button" class="btn blogPost carouselBtn" data-toggle="modal" data-target="#meetModal4">
+                                Anyone Else See <br>Lovecraft Country? <img src="img/shockEmoji.png" alt=""/>
+                            </button>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
