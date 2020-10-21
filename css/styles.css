@@ -179,7 +179,6 @@ body {
 .centerNavShow {
     background-color: #e39a00;
     background-image: url(../img/darkBG.jpg);
-    background-position: repeat;
     flex-wrap: wrap;
     transition: .5s;
 }
@@ -421,10 +420,11 @@ body {
     display: none;
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100%;
+    left: 0;
+
     padding: 4%;
     transition: .5s;
+    margin-top: -60px;
 }
 
 .healthShow {
@@ -1157,7 +1157,5 @@ button.close {
 .inHold {
     margin: 0% auto;
 }
-
-
-
+}
 }
