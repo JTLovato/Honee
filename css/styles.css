@@ -625,7 +625,7 @@ body {
      width: 100%;
     margin: 5px;
     border-radius: 10px;
-    background-image: url(../img/splashbg.jpg);
+    background-image: url("../img/splashbg.jpg");
 }
 
 .soundBtnHold {
@@ -872,7 +872,7 @@ button.close {
     text-align: center;
 }
 .modal-header, .modal-footer {
-    background-image: url(../img/splashbg.jpg);
+    background-image: url("../img/splashbg.jpg");
 }
 .modal-header{
     display: flex;
@@ -880,7 +880,7 @@ button.close {
     text-align: center;
 }
 .modal-body {
-    background-image: url(../img/background.jpg);
+    background-image: url("../img/background.jpg");
     padding: 20px;
 }
 .modal-body h4 {
